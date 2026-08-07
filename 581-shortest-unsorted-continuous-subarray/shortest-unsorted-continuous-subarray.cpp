@@ -8,7 +8,7 @@ public:
         int end = -1, start = -2;
         int maxEle = nums[0];
         int minEle = nums[n - 1];
-        int count = 0;
+    
 
         for (int i = 1; i < n; i++) {
             maxEle = max(maxEle, nums[i]);
@@ -23,7 +23,7 @@ public:
             if (nums[i] > minEle)
                 end = i;
         }
-        count = start - end + 1;
-        return count;
+        
+        return  start - end + 1;
     }
 };
